@@ -1,13 +1,5 @@
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.impute import SimpleImputer,KNNImputer
-from datasist.structdata import detect_outliers
-from sklearn.model_selection import train_test_split
-import category_encoders as ce
-from sklearn.metrics import mean_squared_error
-from sklearn.preprocessing import PowerTransformer
 import joblib
 import streamlit as st
 
@@ -54,7 +46,7 @@ def main():
     Brand = st.selectbox("Brand",('Maruti','Hyundai','Honda','Audi',
         'Nissan',        'Toyota',    'Volkswagen',          'Tata',
           'Land',    'Mitsubishi',       'Renault', 'Mercedes-Benz',
-           'BMW',      'Mahindra',          'Ford',       'Porsche',
+           'BMW',      Mahindra',          'Ford',       'Porsche',
         'Datsun',        'Jaguar',         'Volvo',     'Chevrolet',
          'Skoda',          'Mini',          'Fiat',          'Jeep',
     'Ambassador',         'Isuzu',         'ISUZU',         'Force',
